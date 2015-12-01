@@ -1,0 +1,391 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Название сайта</title>
+		<meta name="description" content="" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="stylesheet" href="style.css">	
+		<!-- bxSlider CSS file -->
+		<link href="css/jquery.bxslider.css" rel="stylesheet" />
+		<!-- select.css -->
+		<link href="css/select.css" rel="stylesheet" type="text/css" />
+		<!-- Range slider css -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<link rel="stylesheet" href="css/jquery-ui.css">
+		<!-- Range slider js -->
+		<script src="js/jquery-ui.js"></script>
+		<script>
+
+		 $(function() {
+		 	var otMin = 36000;
+			var doMax = 159000;
+		    $( "#slider-range" ).slider({
+		      range: true,
+		      min: otMin,
+		      max: doMax,
+		      values: [ otMin, doMax ],
+		      slide: function( event, ui ) {
+		        $( "#amount" ).val( "от " + ui.values[ 0 ]+ " руб. " + "\u00A0"+"\u00A0"+"\u00A0"+"\u00A0"+"\u00A0"+" до " + ui.values[ 1 ]  + " руб.");
+		      }
+		    });
+		    $( "#amount" ).val( "от " + $( "#slider-range" ).slider( "values", 0 ) +" руб. "  +"\u00A0"+"\u00A0"+"\u00A0"+"\u00A0"+"\u00A0"+" до " + $( "#slider-range" ).slider( "values", 1 ) + " руб." );
+		  });
+		 // $(ui.values).addClass("doMax");
+		</script>
+		<!--[if lt IE 9]>
+			<link rel="stylesheet" href="https://rawgit.com/codefucker/finalReject/master/reject/reject.css" media="all" />
+			<script type="text/javascript" src="https://rawgit.com/codefucker/finalReject/master/reject/reject.min.js" data-text="Ваш браузер застарел, обновите свой браузер"></script>
+		<![endif]-->
+	</head>
+	<body>	
+		<!--  Start header -->		
+		<header>
+			<div class="header-login">
+				<div class="header-login-inner">
+					<ul class="hli-left">
+						<li><a href="#" class="chat"><span>Live</span> Chat</a></li>
+						<li><a href="#" class="moskov">Москва</a></li> 
+					</ul>
+					<ul class="hli-right">
+						<li><a href="#" class="sing-up">Зарегистрироваться</a><span></span></li>
+						<li><a href="#" class="login">Вход</a></li>
+						<li><a href="#" class="language">Язык</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="header-inner">
+				<a href="#" class="logo"><img src="images/header/logo-bg.png" alt=""></a>
+				<div class="form-number">
+					<a href="#" class="phone-number"><span>8</span>800-2000-600</a>
+					<a href="#" class="phone-callback">Звонок бесплатный</a>
+					<form action="">
+						<input type="text" placeholder="Поиск по сайту">
+						<input type="submit" value="&nbsp;">
+					</form>
+				</div>
+				<a href="#" class="card">В корзине <span>1</span> товар</a>
+			</div>
+			<nav class="header-nav">
+				<ul class="header-nav-inner">
+					<li><a href="#">Кольца</a><span></span></li>
+					<li><a href="#">Серьги</a><span></span></li>
+					<li><a href="#">Кулоны</a><span></span></li>
+					<li class="active"><a href="#">Цепочки</a><span></span></li>
+					<li><a href="#">Браслеты</a><span></span></li>
+					<li><a href="#">Коллекции</a><span></span></li>
+					<li><a href="#">Акции</a><span></span></li>
+					<li><a href="#">Брилианты</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- Stop header -->		
+		<!--  Start slider-top -->
+		<section class="slider-top">
+			<ul id="slider1">
+				<li><img src="images/slider-top/1.jpg" />
+					<div class="slider1-block-text">
+						<p>Коллекция</p>
+						<h2>Бабочки</h2>
+						<p>Ювелирные цветы и бабочки с скидкой 10%</p>
+						<a href="#" class="s1bt-buton">Узнать подробнее</a>
+					</div>
+				</li>
+				<li><img src="images/slider-top/1.jpg" />
+					<div class="slider1-block-text">
+						<p>Коллекция</p>
+						<h2>Бабочки</h2>
+						<p>Ювелирные цветы и бабочки с скидкой 10%</p>
+						<a href="#" class="s1bt-buton">Узнать подробнее</a>
+					</div>
+				</li>
+				<li><img src="images/slider-top/1.jpg" />
+					<div class="slider1-block-text">
+						<p>Коллекция</p>
+						<h2>Бабочки</h2>
+						<p>Ювелирные цветы и бабочки с скидкой 10%</p>
+						<a href="#" class="s1bt-buton">Узнать подробнее</a>
+					</div>
+				</li>
+				<li><img src="images/slider-top/1.jpg" />
+					<div class="slider1-block-text">
+						<p>Коллекция</p>
+						<h2>Бабочки</h2>
+						<p>Ювелирные цветы и бабочки с скидкой 10%</p>
+						<a href="#" class="s1bt-buton">Узнать подробнее</a>
+					</div>
+				</li>
+				<li><img src="images/slider-top/1.jpg" />
+					<div class="slider1-block-text">
+						<p>Коллекция</p>
+						<h2>Бабочки</h2>
+						<p>Ювелирные цветы и бабочки с скидкой 10%</p>
+						<a href="#" class="s1bt-buton">Узнать подробнее</a>
+					</div>
+				</li>
+			</ul>     
+		</section>
+		<!-- Stop slider-top -->
+		<!--  Start filter-block -->
+		<section class="filter-block">
+			<h2>Я ищу:</h2>
+			<div class="filters-button">
+				<a href="#">В ПОДАРОК</a>
+				<a href="#" class="active">ДЛЯ СЕБЯ</a>
+			</div>
+			<h2></h2>	
+			<div class="filter-select-block-left">
+				<div class="select">
+					<a href="#" class="slct">Кольца</a>
+					<ul class="drop">
+						<li>Кольца1</li>
+						<li>Кольца2</li>
+						<li>Кольца3</li>
+						<li>Кольца4</li>		
+					</ul>
+					<input type="hidden" id="select" />
+				</div>
+			</div>
+			<div class="filter-select-block-right">
+				<div class="select2">
+					<a href="#" class="slct2">Из белого золота</a>
+					<ul class="drop2">
+						<li>Из белого золота2</li>
+						<li>Из белого золота3</li>
+						<li>Из белого золота4</li>
+						<li>Из белого золота5</li>		
+					</ul>
+					<input type="hidden" id="select2" />
+				</div>
+				<div class="select3">
+					<a href="#" class="slct3">С бриллиантами</a>
+					<ul class="drop3">
+						<li>С бриллиантами2</li>
+						<li>С бриллиантами3</li>
+						<li>С бриллиантами4</li>
+						<li>С бриллиантами5</li>		
+					</ul>
+					<input type="hidden" id="select3" />
+				</div>
+
+			</div>
+
+			<div class="filter-range-slider">
+				<p>				  
+				  <input type="text" id="amount" readonly >
+				</p>				 
+				<div id="slider-range"></div>
+				<a href="#" class="pick-up">ПОДОБРАТЬ</a>
+			</div>
+
+		</section>
+		<!-- Stop filter-block -->
+		<!--  Start category -->
+		<section class="category">
+			<ul class="cate-block">
+				<li><h3>Ювелирные изделия</h3></li>
+				<li><img src="images/category/1.jpg" alt=""></li>
+				<li class="cat-desc"><a href="#">Кольцо женское,размер 22 , ширина 15мм</a></li>
+				<li class="cat-desc"><a href="#">Кольцо женское,размер 22 , ширина 15мм</a></li>
+				<li class="cat-desc"><a href="#">Кольцо женское,размер 22 , ширина 15мм</a></li>
+			</ul>
+			<ul class="cate-block">
+				<li><h3>Подарки</h3></li>
+				<li><img src="images/category/2.jpg" alt=""></li>
+				<li class="cat-desc"><a href="#">Кольцо женское,размер 22 , ширина 15мм</a></li>
+				<li class="cat-desc"><a href="#">Кольцо женское,размер 22 , ширина 15мм</a></li>
+				<li class="cat-desc"><a href="#">Кольцо женское,размер 22 , ширина 15мм</a></li>
+			</ul>
+			<ul class="cate-block">
+				<li><h3>Обручальные кольца</h3></li>
+				<li><img src="images/category/3.jpg" alt=""></li>
+				<li class="cat-desc"><a href="#">Кольцо женское,размер 22 , ширина 15мм</a></li>
+				<li class="cat-desc"><a href="#">Кольцо женское,размер 22 , ширина 15мм</a></li>
+				<li class="cat-desc"><a href="#">Кольцо женское,размер 22 , ширина 15мм</a></li>
+			</ul>
+		</section>
+		<!-- Stop category -->
+		<!--  Start slider-center -->
+		<section class="slider-center">
+			<div class="popular-products">
+				<h2><span>Популярные</span>Изделия</h2>
+			</div>
+			<div class="slider-center-block">
+				<ul id="slider2">
+					<li>
+						<div class="slider2-desc">
+							<a href="#"><img src="images/slider-center/1.jpg" alt=""></a>
+							<span>серьги с бриллиантом</span>
+							<a href="#" class="price">29 000 руб.</a>
+						</div>
+					</li>
+					<li>
+						<div class="slider2-desc">
+							<a href="#"><img src="images/slider-center/2.jpg" alt=""></a>
+							<span>серьги с бриллиантом</span>
+							<a href="#" class="price">29 000 руб.</a>
+						</div>
+					</li>
+					<li>
+						<div class="slider2-desc">
+							<a href="#"><img src="images/slider-center/2.jpg" alt=""></a>
+							<span>серьги с бриллиантом</span>
+							<a href="#" class="price">29 000 руб.</a>
+						</div>
+					</li>
+					<li>
+						<div class="slider2-desc">
+							<a href="#"><img src="images/slider-center/2.jpg" alt=""></a>
+							<span>серьги с бриллиантом</span>
+							<a href="#" class="price">29 000 руб.</a>
+						</div>
+					</li>
+					<li>
+						<div class="slider2-desc">
+							<a href="#"><img src="images/slider-center/2.jpg" alt=""></a>
+							<span>серьги с бриллиантом</span>
+							<a href="#" class="price">29 000 руб.</a>
+						</div>
+					</li>								  
+				</ul>	
+			</div>
+			<div class="popular-products2"><img src="images/slider-center/popular-products2-bg.png" /></div>
+		</section>
+		<!-- Stop slider-center -->
+		<!--  Start thumbnails-img -->
+		<section class="thumbnails-img">
+			<div class="ti-block">
+				<a href="#"><img src="images/thumbnails-img/1.jpg" alt=""></a>
+			</div>
+			<div class="ti-block">
+				<a href="#"><img src="images/thumbnails-img/2.jpg" alt=""></a>
+				<h3><span>Как сделать</span>Предложение?</h3>
+			</div>
+			<div class="ti-block">
+				<a href="#"><img src="images/thumbnails-img/3.jpg" alt=""></a>
+				<h3><span>Наши</span>Изделия</h3>
+			</div>
+			
+		</section>
+		<!-- Stop thumbnails-img -->
+		<!--  Start slider-bottom -->
+		<section class="slider-bottom">
+			<ul id="slider3">
+				<li>
+					<div class="slider3-block">
+						<a href="#"><img src="images/slider-bottom/1.png" /></a>
+						<h3>Взять кредит</h3>
+						<p>Приобретайте в кредит! Приобретайте в кредит! Приобретайте в кредит!</p>
+					</div>
+				</li>
+				<li>
+					<div class="slider3-block">
+						<a href="#"><img src="images/slider-bottom/2.png" /></a>
+						<h3>Узнай как мы работаем</h3>
+						<p>Узнай как мы работаем! Узнай как мы работаем! Узнай как мы работаем!</p>
+					</div>
+				</li>
+				<li>
+					<div class="slider3-block">
+						<a href="#"><img src="images/slider-bottom/1.png" /></a>
+						<h3>Взять кредит</h3>
+						<p>Приобретайте в кредит! Приобретайте в кредит! Приобретайте в кредит!</p>
+					</div>
+				</li>
+				<li>
+					<div class="slider3-block">
+						<a href="#"><img src="images/slider-bottom/2.png" /></a>
+						<h3>Узнай как мы работаем</h3>
+						<p>Узнай как мы работаем! Узнай как мы работаем! Узнай как мы работаем!</p>
+					</div>
+				</li>					
+			</ul>
+		</section>
+
+		<!-- Stop slider-bottom -->
+		<!--  Start footer -->
+		<footer>
+			<div class="footer-social">
+				<ul class="social">
+					<li><a href="#"><img src="images/footer/social/4.png" alt=""></a></li>
+					<li><a href="#"><img src="images/footer/social/4.png" alt=""></a></li>
+					<li><a href="#"><img src="images/footer/social/4.png" alt=""></a></li>
+					<li><a href="#"><img src="images/footer/social/4.png" alt=""></a></li>
+				</ul>
+			</div>
+			<div class="footer-inner">
+				<ul class="fi-block-1">
+					<h4><a href="#">Служба поддержки</a></h4>
+					<li><p>Нам важно ваше мнение<br> Поделитесь с нами вашим<br> мнением о нашем сайте,<br> сервисе и украшениях</p></li>
+				</ul>
+				<ul class="fi-block-2">
+					<h4><a href="#">Новинки и Новости</a></h4>
+					<li><a href="#">О Небе</a></li>
+					<li><a href="#">Условия продажи</a></li>
+					<li><a href="#">Уничтожитель сомнений</a></li>
+					<li><a href="#">Гарантия качества</a></li>
+					<li><a href="#">Оптовая продажа</a></li>					
+				</ul>
+				<ul class="fi-block-3">
+					<h4><a href="#">Наша Компания</a></h4>
+					<li><a href="#">Бесплатная доставка</a></li>
+					<li><a href="#">Подарочная упаковка</a></li>
+					<li><a href="#">Покупка в кредит</a></li>
+					<li><a href="#">Бонусные рубли</a></li>
+					<li><a href="#">Подарочные сертификаты</a></li>
+				</ul>
+				<ul class="fi-block-4">
+					<h4><a href="#">Контакты</a></h4>
+					<li><a href="#" class="phone">+7 (895) 444-22-43</a></li>
+					<li><a href="#">Вконтакте</a></li>
+					<li><a href="#">Facebook</a></li>
+					<li><a href="#">Инстаграмм</a></li>
+					<li><a href="#">Mail.ru</a></li>
+				</ul>
+			</div>
+		</footer>
+
+		<!-- Stop footer -->
+				
+		<script src="js/myscript.js" type="text/javascript"></script>
+		<!-- select.js -->
+		<script src="js/select.js" type="text/javascript"></script>
+		
+		<!-- bxSlider Javascript file -->
+		<script src="js/jquery.bxslider.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('#slider1').bxSlider({
+					auto: true,
+					autoControls: true,
+					pause: 7000
+				});
+
+				$('#slider2').bxSlider({
+					moveSlides: 1,
+					maxSlides: 5,
+					slideWidth: 168,
+					slideHeiht: 175,
+					slideMargin: 10,
+					controls: true,
+					pager: false,
+					auto: true,
+					autoControls: true,
+					pause: 7000
+				});
+				$('#slider3').bxSlider({
+					moveSlides: 1,
+					maxSlides: 2,
+					slideWidth: 571,
+					slideMargin: 30,
+					auto: true,
+					autoControls: true,
+					pause: 7000
+				});
+			});
+		</script>
+		
+	</body>
+</html>
