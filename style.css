@@ -26,6 +26,16 @@ src: url('fonts/SegoeUI/SegoeUIRegular/SegoeUIRegular.eot?#iefix') format('embed
 font-weight: normal;
 font-style: normal;
 }
+@font-face {
+font-family: 'SegoeUIBold';
+src: url('fonts/SegoeUI/SegoeUIBold/SegoeUIBold.eot');
+src: url('fonts/SegoeUI/SegoeUIBold/SegoeUIBold.eot?#iefix') format('embedded-opentype'),
+ url('fonts/SegoeUI/SegoeUIBold/SegoeUIBold.woff') format('woff'),
+ url('fonts/SegoeUI/SegoeUIBold/SegoeUIBold.ttf') format('truetype'),
+ url('fonts/SegoeUI/SegoeUIBold/SegoeUIBold.svg#fonts/SegoeUI/SegoeUIBold/SegoeUIBold') format('svg');
+font-weight: normal;
+font-style: normal;
+}
 /* ------------------------------ Конец блока присоединения шрифтов ------------------------------*/
 
 
@@ -40,7 +50,9 @@ body{
 a:hover{
 	text-decoration: none;
 }
-
+.clear{
+	clear: both;
+}
 /* ------------------------------  Start header ------------------------------ */
 /*-- header-login --*/
 header{
@@ -901,49 +913,273 @@ footer{
 	font-size: 18px;
 	opacity: 0.7;
 }
-
-
 /* stop catalog-content */
+/*-----------------------------------------------------------------------------------*/
+/*  CATALOG
+/*-----------------------------------------------------------------------------------*/
+.page-product{
+	position: fixed;
+    top: 20px;
+    left: 50%;
+    overflow: hidden;
+    width: 1000px;
+    margin-left: -500px;
+    padding: 20px;
+    font-size: 17px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0,0,0, 0.1);
+}
+/* product-slider-inner */
+.product-slider-inner {
+    width: 628px;    
+    padding: 0px 16px 0 0;    
+    float: left;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* spart  */
-/* stop  */
-
-/* spart  */
-/* stop  */
-
-
-/* spart  */
-/* stop  */
-
-
-
-
-
-
-
-
-
-
-
-
-
+#bx-pager a img {
+    margin-bottom: 4px;
+	border: 1px solid #e6e7e9;
+}
+#bx-pager a.active img {
+	border: 1px solid #727272;
+}
+.span-name{
+	position: absolute;
+    bottom: -56px;
+    right: 0;
+    color: #737373;
+}
+/* product-code */
+.product-code{
+	width: 310px;
+	float: right;
+}
+.product-code span{
+	display: inline-block;
+}
+.pc-span{
+    margin-top: -2px;
+	font-weight: 300;
+	color: #878787;
+}
+.product-code h1{
+    padding: 10px 0 20px 0;
+	font-weight: 600;
+	font-size: 60px;
+	color: #ff0000;
+}
+.product-code h2{
+	line-height: 20px;
+	font-weight: 600;
+	color: #000;
+}
+.product-code h3{
+	padding: 14px 0 2px 0;
+	font-weight: 600;
+	color: #565656;
+}
+.product-code p{
+	line-height: 19px;
+	font-size: 13px;
+	color: #565656;
+}
+.stock, .dimensions{
+    font-weight: 600;
+	color: #000;
+}
+.stock{
+    padding: 11px 10px 6px 0;
+}
+.stock-nun{
+	color: #6a6a6a;
+}
+.dimen-block{
+	overflow: hidden;
+}
+.dimen-block li{
+	margin-top: 9px;
+	padding: 0px 4px 0px 0;
+	float: left;
+}
+.dimen-block li a{
+	display: block;
+    width: 34px;
+    padding: 4.5px 0;
+    text-align: center;
+	text-decoration: none;
+	font-size: 12px;
+	color: #515151;
+	border: 1px solid #807D7D;
+	border-radius: 3px;
+	box-shadow: 0px 0px 1px rgba(1,1,1,0.5);
+}
+.dimen-block li a:hover{
+	background: #bababa;
+	color: #fff;
+}
+.dimen-block li:last-child a{
+	width: 100px;
+	text-decoration: underline;
+	color: #ff0000;
+}
+.order-card{
+	overflow: hidden;
+}
+.order-card li:first-child{
+    margin-top: 13px;
+	float: left;
+}
+.order-card li:last-child{
+    margin-top: 13px;
+	float: right;
+}
+.order-card li a{
+	display: block;
+	width: 149px;
+	height: 40px;
+	padding-top: 15px;
+	text-align: center;
+	font-weight: 600;
+	font-size: 13px
+}
+.order-card li:first-child a{
+	background: #1e3758;
+	color: #fff;
+}
+.order-card li:last-child a{
+	background: #b5f7fd;
+	color: #424242;
+}
+.order-card li:first-child a:hover{
+	background: #ccc;
+	color: #1e3758;
+}
+.order-card li:last-child a:hover{
+	background: #424242;
+	color: #b5f7fd;
+}
+.order-opsions li{
+	display: block;
+}
+.order-opsions li span{
+	font-weight: 600;
+    color: #000;
+    float: left;
+}
+.manufacturer{
+	padding-top: 9px;
+}
+.manufacturer span:last-child{
+	margin: -1px 0 0 8px;
+}
+.country{
+    padding-top: 6px;
+}
+.country span:last-child{
+	margin: -4px 0 0 6px;
+}
+.opsions_ span{
+	padding: 10px 0 8px 0;
+}
+.opsions_block{
+	overflow: hidden;	
+}
+.opsions_block li{
+	margin-right:11px;
+	float: left;
+}
+.opsions_block li a{
+	display: block;
+	width: 96px;
+	height: 40px;	
+	padding: 10px 0 0 0;
+	text-align: center;	
+	font-family: 'SegoeUIBold';	
+	color: #535353;
+	background: #e6e7e9;
+	border-radius: 5px;	
+}
+.opsions_block li a:hover{
+	opacity: 0.7;
+}
+.opsions_block li:last-child{
+	margin-right: 0;
+}
+.opsions_block li:first-child a{
+	position: relative;
+}
+.opsions_block li:first-child a:before{
+	position: absolute;
+    left: 6px;
+    top: 15px;
+	content: '';
+	display: block;
+	width: 7px;
+	height: 7px;
+	background: url(images/products/opsions_block-a-first.png) no-repeat 0 0; 
+}
+.opsions_block li:first-child a:after{
+	position: absolute;
+    right: 6px;
+    top: 15px;
+	content: '';
+	display: block;
+	width: 7px;
+	height: 7px;
+	background: url(images/products/opsions_block-a-first.png) no-repeat -8px 0; 
+}
+.opsions_block li:nth-child(2) a{
+	position: relative;
+    padding-left: 25px;
+}
+.opsions_block li:nth-child(2) a:before{
+	position: absolute;
+    left: 16px;
+    top: 8px;
+	content: '';
+	display: block;
+	width: 24px;
+	height: 19px;
+	background: url(images/products/opsions_block-a-second.png) no-repeat 0 0; 
+}
+/* also-bought */
+.also-bought{
+	float: left;
+}
+.also-bought h3{
+	padding: 17px 0 17px 0;
+	font-weight: 600;
+	color: #000;
+}
+.also-bought ul{
+	overflow: hidden;
+}
+.also-bought li{
+	width: 200px;
+	margin-right: 14px;
+    padding: 48px 0 12px 0;
+	border: 1px solid #e6e7e9;
+	float: left;
+}
+.also-bought li a{
+	display: block;
+	text-decoration: none;
+}
+.also-bought li a:hover{
+	opacity: 0.8;
+	text-decoration: underline;
+}
+.also-bought li a img{
+    display: block;
+    margin: 0 auto;
+}
+.also-bought li a span{
+	display: block;
+	padding: 15px 0 0 8px;	
+	text-align: center;	
+	font-family: 'SegoeUIBold';	
+	color: #000000;
+}
 
 

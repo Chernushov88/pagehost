@@ -13,28 +13,59 @@
 		<!-- select.css -->
 		<link href="css/select.css" rel="stylesheet" type="text/css" />
 		<!-- Range slider css -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		
 		<link rel="stylesheet" href="css/jquery-ui.css">
-		<!-- Range slider js -->
-		<script src="js/jquery-ui.js"></script>
-		<script>
+		
+		
+		<!-- FancyBox -->
+		<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen" />
+		<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/jquery.fancybox-1.2.1.pack.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("a.gallery, a.iframe").fancybox();
+		
 
-		 $(function() {
-		 	var otMin = 36000;
-			var doMax = 159000;
-		    $( "#slider-range" ).slider({
-		      range: true,
-		      min: otMin,
-		      max: doMax,
-		      values: [ otMin, doMax ],
-		      slide: function( event, ui ) {
-		        $( "#amount" ).val( "от " + ui.values[ 0 ]+ " руб. " + "\u00A0"+"\u00A0"+"\u00A0"+"\u00A0"+"\u00A0"+" до " + ui.values[ 1 ]  + " руб.");
-		      }
-		    });
-		    $( "#amount" ).val( "от " + $( "#slider-range" ).slider( "values", 0 ) +" руб. "  +"\u00A0"+"\u00A0"+"\u00A0"+"\u00A0"+"\u00A0"+" до " + $( "#slider-range" ).slider( "values", 1 ) + " руб." );
-		  });
-		 // $(ui.values).addClass("doMax");
-		</script>
+$("a.modalbox").fancybox(
+{								  
+			"frameWidth" : 1000,	 
+			"frameHeight" : 1000 
+								  
+});
+
+			$("a.gallery2").fancybox(
+			{						
+			"padding" : 20, // отступ контента от краев окна
+			"imageScale" : false, // Принимает значение true - контент(изображения) масштабируется по размеру окна, или false - окно вытягивается по размеру контента. По умолчанию - TRUE
+			"zoomOpacity" : false,	// изменение прозрачности контента во время анимации (по умолчанию false)
+			"zoomSpeedIn" : 1000,	// скорость анимации в мс при увеличении фото (по умолчанию 0)
+			"zoomSpeedOut" : 1000,	// скорость анимации в мс при уменьшении фото (по умолчанию 0)
+			"zoomSpeedChange" : 1000, // скорость анимации в мс при смене фото (по умолчанию 0)
+			"frameWidth" : 700,	 // ширина окна, px (425px - по умолчанию)
+			"frameHeight" : 600, // высота окна, px(355px - по умолчанию)
+			"overlayShow" : true, // если true затеняят страницу под всплывающим окном. (по умолчанию true). Цвет задается в jquery.fancybox.css - div#fancy_overlay 
+			"overlayOpacity" : 0.8,	 // Прозрачность затенения 	(0.3 по умолчанию)
+			"hideOnContentClick" :false, // Если TRUE  закрывает окно по клику по любой его точке (кроме элементов навигации). Поумолчанию TRUE		
+			"centerOnScroll" : false // Если TRUE окно центрируется на экране, когда пользователь прокручивает страницу		
+				
+			});
+		
+		$("#menu a, .anim").hover( function() {
+      $(this).animate({"paddingLeft" : "10px"}, 1000)},
+	  function() {$(this).animate({"paddingLeft" : "0"}, 1000);
+});
+
+$("a.iframe").fancybox(
+{								  
+			"frameWidth" : 1000,	 // ширина окна, px (425px - по умолчанию)
+			"frameHeight" : 1000 // высота окна, px(355px - по умолчанию)
+								  
+});
+
+		
+		});
+	</script>
 		<!--[if lt IE 9]>
 			<link rel="stylesheet" href="https://rawgit.com/codefucker/finalReject/master/reject/reject.css" media="all" />
 			<script type="text/javascript" src="https://rawgit.com/codefucker/finalReject/master/reject/reject.min.js" data-text="Ваш браузер застарел, обновите свой браузер"></script>
@@ -216,9 +247,9 @@
 				<ul id="slider2">
 					<li>
 						<div class="slider2-desc">
-							<a href="#"><img src="images/slider-center/1.jpg" alt=""></a>
+							<a class="iframe" href="/pagehost/products.html"><img src="images/slider-center/1.jpg" alt=""></a>
 							<span>серьги с бриллиантом</span>
-							<a href="#" class="price">29 000 руб.</a>
+							<a class="iframe price" href="/pagehost/products.html">29 000 руб.</a>
 						</div>
 					</li>
 					<li>
@@ -347,7 +378,7 @@
 		</footer>
 
 		<!-- Stop footer -->
-				
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 		<!-- select.js -->
 		<script src="js/select.js" type="text/javascript"></script>
@@ -384,6 +415,25 @@
 					pause: 7000
 				});
 			});
+		</script>
+		<!-- Range slider js -->
+		<script src="js/jquery-ui.js"></script>
+		<script>
+
+		 $(function() {
+		 	var otMin = 36000;
+			var doMax = 159000;
+		    $( "#slider-range" ).slider({
+		      range: true,
+		      min: otMin,
+		      max: doMax,
+		      values: [ otMin, doMax ],
+		      slide: function( event, ui ) {
+		        $( "#amount" ).val( "от " + ui.values[ 0 ]+ " руб. " + "\u00A0"+"\u00A0"+"\u00A0"+"\u00A0"+"\u00A0"+" до " + ui.values[ 1 ]  + " руб.");
+		      }
+		    });
+		    $( "#amount" ).val( "от " + $( "#slider-range" ).slider( "values", 0 ) +" руб. "  +"\u00A0"+"\u00A0"+"\u00A0"+"\u00A0"+"\u00A0"+" до " + $( "#slider-range" ).slider( "values", 1 ) + " руб." );
+		  });
 		</script>
 		
 	</body>
