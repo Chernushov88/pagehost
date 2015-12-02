@@ -1,6 +1,7 @@
 ﻿@charset "utf-8";
 
 @import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 @import url(css/media.css);
 @import url(css/reset.css);
 /* ----------------------------Блок присоединения шрифтов--------------------------------*/
@@ -251,7 +252,7 @@ a.phone-number{
 }
 .header-nav-inner{
 	overflow: hidden;
-	width: 916px;	
+	width: 916px;
 	margin: 0 auto;
 	padding-left: 78px;
 	border: 0px solid #ff00ff;
@@ -712,6 +713,237 @@ footer{
 	font-size: 16px;
 }
 /* ------------------------------  Stop footer ------------------------------ */
+/*-----------------------------------------------------------------------------------*/
+/*  CATALOG
+/*-----------------------------------------------------------------------------------*/
+/* spart header */
+.catalog-nav{	
+	width: 100%;	
+	background: #fff;
+	border-top: 1px solid #c0c0c0;
+	border-bottom: 1px solid #c0c0c0;
+}
+.hni-catalog{
+	width: 1202px;
+    margin: 0 auto;
+}
+.catalog-nav .header-nav-inner a{
+	color: #636363;
+}
+.catalog-nav .header-nav-inner span{
+	background: #e6e7e9;
+}
+.home{
+    display: block;
+    width: 55px;
+    float: left;
+    position: absolute;
+}
+.home img{
+    padding: 13px 0 0 15px;
+	float: left;
+}
+.home span {
+    display: block;
+    margin: 10px 0 0 0;
+    width: 1px;
+    height: 29px;
+    background: #e6e7e9;
+}
+.home span:first-child{
+	float: left;
+}
+.home span:last-child{
+    float: right;
+}
+.header-inner-catalog .card {
+    padding: 52px 0 0 0;
+    background: url(images/page-catalog/card-bg-catalog.png) center 0px no-repeat;
+}
+.header-inner-catalog .form-number {
+    margin-left: 190px;}
+.header-inner-catalog .phone-number:before {
+    background: url(images/page-catalog/phone-number-before.png) no-repeat right center;
+}
+/* stop header */
+
+/* spart page-title-map */
+.page-title-map{
+	width: 1202px;
+    margin: 0 auto;
+    padding: 7px 0 5px 12px;
+    font-size: 10px;
+    color: #636363;
+    background: #fff;
+}
+.page-title-map a{
+    color: #636363;
+
+}
+/* stop page-title-map */
+/* spart filter-block-catalog */
+.filter-block-catalog{
+    width: 1202px;
+    margin: 0 auto;
+}
+/* stop filter-block-catalog */
+/* spart catalog-content */
+.catalog-content{
+	width: 1202px;
+    margin: 7px auto 0 auto;
+    padding: 20px 12px 260px 7px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #424242;
+    background: #fff;
+}
+.catalog-content h2{
+	padding: 0px 0 17px 5px;
+	font-weight: 600;
+}
+.catalog-content-inner{
+	overflow: hidden;
+	padding: 16px 0 0 5px;
+    border-top: 1px solid #e6e7e9;
+}
+.cci-block > li{
+	display: block;
+}
+.cci-block > li > ul:last-child{
+	margin-right: 0;
+}
+.catalog-block{
+	position: relative;
+	width: 222px;
+	margin-right: 17px;
+	margin-bottom: 17px;
+    padding: 17px 5px 8px 0;
+	border: 1px solid #e6e7e9;
+	float: left;
+}
+.catalog-block > li > a{
+	display: block;
+}
+.catalog-block > li > a > img{
+	display: block;
+	margin: 0 auto;
+}
+.cat-price{
+	overflow: hidden;
+    padding: 16px 0 9px 10px;
+}
+.cat-price span{
+	display: block;
+	float: left;
+}
+.cp-apan-1{
+	padding: 5px 7px 0 0;
+	text-decoration: line-through;
+}
+.cp-apan-2{
+	font-size: 20px;
+	color: #ff0000;
+}
+.cp-apan-3{
+	margin: 3px 0 0 7px;
+	padding: 3px 5px;
+	font-size: 10px;
+	background: #89ecff;
+}
+.catalog-block > li > p{
+    padding: 0 0 0 13px;
+    opacity: 0.7;
+	font-weight: 300;
+}
+.hit{
+	position: absolute;
+	top: 0;
+	left: -5px;
+}
+.catalog-block-big{
+	width: 461px;
+	height: 583px;
+	margin-bottom: 17px;
+    padding: 61px 5px 8px 0;
+	border: 1px solid #e6e7e9;
+	float: right;
+}
+.catalog-block-big > li > a{
+	display: block;
+}
+.catalog-block-big > li > a > img{
+	display: block;
+	width: 315px;
+	margin: 0 auto;
+}
+.catalog-block-big  .cat-price {
+    display: table;
+    margin: 0 auto;
+    padding: 42px 0 9px 1px;
+}
+.catalog-block-big .cp-apan-1{
+	padding: 5px 7px 0 0;
+	font-size: 18px;
+}
+.catalog-block-big .cp-apan-2{
+	font-size: 24px;
+	color: #ff0000;
+}
+.catalog-block-big .cp-apan-3{
+	margin: 3px 0 0 7px;
+	padding: 3px 5px;
+	font-size: 12px;
+	background: #89ecff;
+}
+.catalog-block-big > li > p{    
+    padding: 1px 52px 0 0;
+    text-align: center;
+	font-size: 18px;
+	opacity: 0.7;
+}
+
+
+/* stop catalog-content */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* spart  */
+/* stop  */
+
+/* spart  */
+/* stop  */
+
+
+/* spart  */
+/* stop  */
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
