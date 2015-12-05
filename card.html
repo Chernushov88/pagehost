@@ -13,6 +13,16 @@
 			<link rel="stylesheet" href="https://rawgit.com/codefucker/finalReject/master/reject/reject.css" media="all" />
 			<script type="text/javascript" src="https://rawgit.com/codefucker/finalReject/master/reject/reject.min.js" data-text="Ваш браузер застарел, обновите свой браузер"></script>
 		<![endif]-->
+		<link rel="stylesheet" href="css/jquery-ui-date.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="js/jquery-ui.js"></script>
+		<script>
+			$(function() {
+			$( "#datepicker" ).datepicker();
+			});
+			
+
+		</script>
 	</head>
 	<body>	
 		<!--  Start header -->		
@@ -125,8 +135,9 @@
 									<span>12.08.2015</span>
 								</div>
 								<div class="delivery-input">
-									<input type="text" value="12.08.2015">
-									<input type="image" src="images/page-card/delivery-inpu-bg.png" value="">
+									<input type="text" id="datepicker" value="12.08.2015">
+
+									<!-- <input type="image" src="images/page-card/delivery-inpu-bg.png" value=""> -->
 								</div>
 							</li>
 						</ul>					

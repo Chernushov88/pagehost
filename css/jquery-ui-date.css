@@ -419,7 +419,7 @@ button.ui-button::-moz-focus-inner {
 .ui-dialog .ui-dialog-content {
 	position: relative;
 	border: 0;
-	padding: 0;
+	padding: .5em 1em;
 	background: none;
 	overflow: auto;
 }
@@ -682,8 +682,8 @@ button.ui-button::-moz-focus-inner {
 	height: .8em;
 }
 .ui-slider-horizontal .ui-slider-handle {
-	top: -7px;
-    margin-left: -1px;
+	top: -.3em;
+	margin-left: -.6em;
 }
 .ui-slider-horizontal .ui-slider-range {
 	top: 0;
@@ -845,7 +845,7 @@ body .ui-tooltip {
 }
 .ui-widget-content {
 	border: 1px solid #aaaaaa;
-	background: #1c3251;
+	background: #ffffff;
 	color: #222222;
 }
 .ui-widget-content a {
@@ -853,7 +853,7 @@ body .ui-tooltip {
 }
 .ui-widget-header {
 	border: 1px solid #aaaaaa;
-	background: #fff;
+	background: #cccccc ;
 	color: #222222;
 	font-weight: bold;
 }
@@ -866,12 +866,10 @@ body .ui-tooltip {
 .ui-state-default,
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default {
-	width: 7px;
-    height: 16px;
-    
-}
-.ui-state-default{
-	background: #1c3251;
+	border: 1px solid #d3d3d3;
+	background: #e6e6e6;
+	font-weight: normal;
+	color: #555555;
 }
 .ui-state-default a,
 .ui-state-default a:link,
@@ -886,7 +884,7 @@ body .ui-tooltip {
 .ui-widget-content .ui-state-focus,
 .ui-widget-header .ui-state-focus {
 	border: 1px solid #999999;
-
+	background: #dadada;
 	font-weight: normal;
 	color: #212121;
 }
@@ -905,7 +903,7 @@ body .ui-tooltip {
 .ui-widget-content .ui-state-active,
 .ui-widget-header .ui-state-active {
 	border: 1px solid #aaaaaa;
-
+	background: #ffffff;
 	font-weight: normal;
 	color: #212121;
 }
@@ -922,7 +920,7 @@ body .ui-tooltip {
 .ui-widget-content .ui-state-highlight,
 .ui-widget-header .ui-state-highlight {
 	border: 1px solid #fcefa1;
-
+	background: #fbf9ee;
 	color: #363636;
 }
 .ui-state-highlight a,
@@ -934,7 +932,7 @@ body .ui-tooltip {
 .ui-widget-content .ui-state-error,
 .ui-widget-header .ui-state-error {
 	border: 1px solid #cd0a0a;
-
+	background: #fef1ec;
 	color: #cd0a0a;
 }
 .ui-state-error a,
@@ -980,27 +978,27 @@ body .ui-tooltip {
 }
 .ui-icon,
 .ui-widget-content .ui-icon {
-
+	background-image: url("");
 }
 .ui-widget-header .ui-icon {
-
+	background-image: url("");
 }
 .ui-state-default .ui-icon {
-
+	background-image: url("");
 }
 .ui-state-hover .ui-icon,
 .ui-state-focus .ui-icon {
-
+	background-image: url("");
 }
 .ui-state-active .ui-icon {
-
+	background-image: url("");
 }
 .ui-state-highlight .ui-icon {
-
+	background-image: url("");
 }
 .ui-state-error .ui-icon,
 .ui-state-error-text .ui-icon {
-
+	background-image: url("");
 }
 
 /* positioning */
@@ -1209,14 +1207,6 @@ body .ui-tooltip {
 .ui-corner-right,
 .ui-corner-br {
 	border-bottom-right-radius: 4px;
-}
-.ui-corner-all,
-.ui-corner-bottom,
-.ui-corner-right,
-.ui-corner-br{
-    height: 6px;
-    border: 1px solid #1c3251;
-    /*border-radius: 0;*/
 }
 
 /* Overlays */

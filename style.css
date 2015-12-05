@@ -551,6 +551,10 @@ a.phone-number{
 .slider2-desc a{
 	display: block;
 	letter-spacing: .5px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	color: #ff0000;
 }
 .slider2-desc img{
 	display: table;
@@ -563,12 +567,6 @@ a.phone-number{
 	font-size: 14px;
 	color: #424242;
 	letter-spacing: .5px;
-}
-.slider2-desc .price{
-	text-align: center;
-	text-decoration: none;
-	font-size: 16px;
-	color: #ff0000;
 }
 .popular-products2{	
 	width: 27px;
@@ -1328,13 +1326,7 @@ footer{
 	padding-left: 35px;
 	font-family: 'SegoeUIBold';	
 	font-size: 14px;
-}
-.delivery-input input[type=image]{
-	position: absolute;
-	top: 4px;
-	left: 4px;
-	width: 22px;
-	height: 22px;
+	background: url(images/page-card/delivery-inpu-bg.png) no-repeat 3px 3px;
 }
 /* pay-bonus */
 .pay-bonus{
