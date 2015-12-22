@@ -1,23 +1,16 @@
 ﻿<!DOCTYPE HTML>
 <html>
-	<head>
-		
-		
-	</head>
-	
-
-		
-		
-
-	
+	<head>	
+	</head>	
     <!--start-->
 	<body id="container-text" >
-
 		<!-- jquery  -->
 		<div  class="page-product">
-<link rel="stylesheet" href="/pagehost/style.css">	
+		<link rel="stylesheet" href="/pagehost/style.css">	
 		<!-- bxSlider CSS file -->
 		<link href="/pagehost/css/jquery.bxslider.css" rel="stylesheet" />
+		<!-- popup -->
+		<link href="/pagehost/css/popup.css" rel="stylesheet" />
 
 	    <div class="product-slider-inner">
 			<ul id="slider4">					
@@ -79,7 +72,7 @@
 				<li><a href="">не знаю размер</a></li>
 			</ul>
 			<ul class="order-card">
-				<li><a href="">Быстрый заказ</a></li>
+				<li><a href="javascript:PopUpShow()">Быстрый заказ</a></li>
 				<li><a href="">Добавить в корзину</a></li>
 			</ul>
 			<ul class="order-opsions">
@@ -127,6 +120,18 @@
 				</li>
 			</ul>
 		</div>
+        <div class="b-popup" id="popup">
+			<a class="closik" href="javascript:PopUpHide()">X</a>
+			<h3>Быстрый заказ</h3>				
+			<form action='/ajax/buy1click.php' method='post' id='buy1click' >
+			    <div><input type='text' name='buyFormFio' placeholder='ФИО' /></div>
+		        <div><input type='text' name='buyFormMail' placeholder='E-mail' /></div>
+		        <div><input type='text' name='buyFormphone' placeholder='Телефон' /></div>
+		        <div><input type='submit' value='Заказать' /></div>			   
+			</form>		
+		</div>
+		<!-- darken -->
+		<div class="darken"></div>
 		<!-- bxSlider Javascript file -->
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script src="/pagehost/js/jquery.bxslider.js"></script>
@@ -142,6 +147,13 @@
 					pause: 7000
 				});
 			});
+		</script>
+		<!-- PopUp -->
+		<script>			
+			//Функция отображения PopUp
+			function PopUpShow(){$(".darken").fadeIn(); $("#popup").fadeIn();}			        
+		    //Функция скрытия PopUp
+			function PopUpHide(){$(".darken").fadeOut(300); $("#popup").fadeOut(300); }
 		</script>
 		
 		</div>
