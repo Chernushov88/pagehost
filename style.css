@@ -56,6 +56,7 @@ a:hover{
 /* ------------------------------  Start header ------------------------------ */
 /*-- header-login --*/
 header{
+	min-width: 1202px;
 	background: #f2f2f2;
 	font-size: 15px;
 }
@@ -543,8 +544,8 @@ a.phone-number{
 	float: left;
 }
 .slider2-desc{
-    height: 180px;
-    padding: 23px 0 0 3px;
+    height: 178px;
+    padding: 21px 0 0 3px;
 	font-weight: 300;
 	border-right: 1px solid #0ce0f0;
 }
